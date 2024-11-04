@@ -1,0 +1,94 @@
+/**
+ * Department Node Form
+ */
+
+/* Make Additional Member Tables look like tables in node form */
+.field-name-field-additional-member-tables tr.odd .form-item,
+.field-name-field-additional-member-tables tr.even .form-item {
+  white-space: normal;
+}
+
+.field-name-field-additional-member-tables .fieldset-wrapper .field-widget-text-textfield {
+  float: left;
+  max-width: 17%;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.vertical-tabs-pane .field-name-field-additional-member-tables .fieldset-wrapper > div:first-child {
+  padding-top: 0;
+}
+
+.field-name-field-additional-member-tables .field-multiple-table td .field-type-entityreference,
+.field-name-field-additional-member-tables .field-multiple-table td .field-type-text-long{
+  float: left;
+  max-width: 17%;
+  margin-right: 6px;
+}
+
+/* Mock heading separating vertical tabs */
+li.vertical-tab-button.Advanced.Fields {
+  background-color: #fff;
+  margin-left: -1px;
+  border-left: 1px solid #fff;
+}
+li.vertical-tab-button.Advanced.Fields a {
+  color: #444;
+}
+li.vertical-tab-button.Advanced.Fields a:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+/* Hide status; inaccurate because of multiple node menu */
+.vertical-tab-button.Navigation.Settings .summary {
+  display: none;
+}
+
+/* Slight style difference for "advanced" settings */
+.node-department-form li.vertical-tab-button.Review.on,
+.node-department-form li.vertical-tab-button.BAC.Import,
+.node-department-form li.vertical-tab-button.Navigation.Settings,
+.node-department-form li.vertical-tab-button.Menu.settings,
+.node-department-form li.vertical-tab-button.Book.outline,
+.node-department-form li.vertical-tab-button.URL.path.settings,
+.node-department-form li.vertical-tab-button.URL.redirects,
+.node-department-form li.vertical-tab-button.Meta.tags,
+.node-department-form li.vertical-tab-button.Revision.information,
+.node-department-form li.vertical-tab-button.Comment.settings,
+.node-department-form li.vertical-tab-button.email.PDF.versions,
+.node-department-form li.vertical-tab-button.Page.title.settings,
+.node-department-form li.vertical-tab-button.Authoring.information,
+.node-department-form li.vertical-tab-button.Publishing.options {
+  background: none repeat scroll 0 0 rgba(255, 0, 0, 0.1);
+}
+
+/* Hide the N/A values for member status on person nodes  */
+#person-node-form div[class^="form-item form-type-radio form-item-field-memberships-department-und"][class$="field-active-membership-und"]:first-child,
+#person-node-form div[class^="form-item form-type-radio form-item-field-memberships-board-und"][class$="field-active-membership-und"]:first-child {
+  display:none;
+}
+
+/* Hide Save and stay button on node/add */
+.page-node-add #edit-save-and-edit--2,
+.page-node-add #edit-save-and-edit{
+  display: none;
+}
+
+/* Hide ajax submit buttons on certain node fields for certain roles. */
+.vts-hide-ajax-submit .form-submit {
+  display: none;
+}
+
+/* Hide delete links on content administration page */
+#node-admin-content .links .delete {
+  display: none;
+}
+
+.field-name-field-date-and-time .fieldset-description {
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.current-user--global-group-admin .vertical-tab-button.Groups {
+  display: none;
+}
